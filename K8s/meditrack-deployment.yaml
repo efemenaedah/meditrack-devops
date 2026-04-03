@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: meditrack-api-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: meditrack
+  template:
+    metadata:
+      labels:
+        app: meditrack
+    spec:
+      containers:
+      - name: meditrack
+        image: efemenaedah/meditrack-devops:latest
+        envFrom:
+        - configMapRef:
+            name: api-config
+        ports:
+        - containerPort: 5000
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 5000 
+          initialDelaySeconds: 15 
+          periodSeconds: 20
+        resources:
+          limits:
+            cpu: "250m"
+            memory: "256Mi"
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
