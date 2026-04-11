@@ -159,6 +159,6 @@ pipeline {
 - GitHub workflows *
 
 ## 👤 Author
-- Edah Efemena Evans
+- Edah Evans
 - Cloud/DevOps Engineer
 - GitHub: https://github.com/efemenaedah/meditrack-devops
