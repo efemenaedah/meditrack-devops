@@ -1,5 +1,5 @@
 # meditrack-project
-A production ready DevOps implementation for MediTrack API — A hospital patient records system. This project demonstrates end-to-end CI/CD, containerization, Kubernetes deployment, and monitoring on AWS.
+A production ready DevOps implementation for MediTrack API — A hospital patient records system. This project demonstrates end-to-end CI/CD, containerization, Kubernetes deployment and monitoring on AWS.
 
 ## Architecture Flow
 Developer → GitHub → Jenkins CI → Docker Hub → Kubernetes (EKS)
@@ -156,7 +156,7 @@ pipeline {
 - Container Orchestration (Kubernetes/EKS)
 - Containerization (Docker)
 - Monitoring & Observability (Prometheus + Grafana)
-- GitHub workflows
+- GitHub workflows *
 
 ## 👤 Author
 - Edah Efemena Evans
